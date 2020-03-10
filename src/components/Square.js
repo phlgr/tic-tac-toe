@@ -1,5 +1,10 @@
-import React from "react";
+import React from 'react';
 
 export default function Square() {
-  return <button className="square">{/* TODO */}</button>;
+  const [value, setValue] = React.useState(null);
+  return (
+    <button className="square" onClick={() => setValue('🚜')}>
+      {value}
+    </button>
+  );
 }
